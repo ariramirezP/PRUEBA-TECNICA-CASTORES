@@ -1,4 +1,5 @@
 # PRUEBA-TECNICA-CASTORES
+
 Proyecto-prueba-tecnica-castores
 
 IDE utilizado NETBEANS 
@@ -8,6 +9,8 @@ javajdk 17
 DBMS MysqlWorbench 8.0 CE
 
 PASOS PARA CORRER LA APLICACIÓN 
+IMPORTANTE CONTAR CON INTERNET
+
 BASE DE DATOS
 Despues de descargar el proyecto y de haberlo descomprimido,
 debes de ir a tu DBMS y abrir los scripts de la base de datos (controlInventarios)
