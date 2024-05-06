@@ -19,7 +19,7 @@ IDE
 Despues de abrir el ide, debes de seleccionar la opcion para abrir un proyecto y seleccionar el proyecto descargado,
 posteriormente solo debes de seleccionar un navegador en donde se ejecutara la aplicacion WEB.
 
-NOTA- Para esta aplicacion se utilizo un servidor apacheTomcat 
+NOTA- Para esta aplicacion se utilizo un servidor (apacheTomcat-10.1.13)
 para agregar un servidor debes de dirigirte a la pestaña de services, seleccionas serves y das click derecho agregar servidor Apache Tomcat or TOM EE
 SERVER LOCATION deberas de poner la ruta del servidor 
 CATALINA BASE ruta de una nueva carpeta que se debera de crear, esta se debe de agregar vacia. nombre de la carpeta (catalina_base)
