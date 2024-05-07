@@ -35,12 +35,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             </div>
         </nav>
         <div class="container mt-4 table-responsive"> <!-- Agrega un contenedor y margen superior -->
-            
+            <div class="d-flex justify-content-end mb-3">
+                <button type="button" class="btn btn-primary mr-2" onclick="mostrarHistorialesPorTipoMovimiento('todos')">Todos</button>
+                <button type="button" class="btn btn-success mr-2" onclick="mostrarHistorialesPorTipoMovimiento('Entrada')">Entradas</button>
+                <button type="button" class="btn btn-danger" onclick="mostrarHistorialesPorTipoMovimiento('Salida')">Salidas</button>
+            </div>
             <table id="ticketsTable" class="table table-striped table-bordered mx-auto"> <!-- Agrega la clase mx-auto -->
                 <thead class="table-dark">
                     <tr>
-                        <th>fecha entrada</th>
-                        <th>usuario</th>
+                        <th>Fecha</th>
+                        <th>Usuario</th>
+                        <th>Tipo movimiento</th>
                     </tr>
                 </thead>
                 <tbody id="ticketsBody">

@@ -14,18 +14,18 @@ import org.glassfish.grizzly.http.util.TimeStamp;
  */
 public class Historicos {
     private int idHistorico;
-    private Date fechaEntrada;
-    private Date fechaSalida;
+    private Date fecha;
+    private String tipoMovimiento;
     private Usuarios usuarios;
     private Productos producto;
     
     public Historicos() {
     }
 
-    public Historicos(int idHistorico, Date fechaEntrada, Date fechaSalida, Usuarios usuarios, Productos producto) {
+    public Historicos(int idHistorico, Date fecha, String tipoMovimiento, Usuarios usuarios, Productos producto) {
         this.idHistorico = idHistorico;
-        this.fechaEntrada = fechaEntrada;
-        this.fechaSalida = fechaSalida;
+        this.fecha = fecha;
+        this.tipoMovimiento = tipoMovimiento;
         this.usuarios = usuarios;
         this.producto = producto;
     }
@@ -38,20 +38,20 @@ public class Historicos {
         this.idHistorico = idHistorico;
     }
 
-    public Date getFechaEntrada() {
-        return fechaEntrada;
+    public Date getFecha() {
+        return fecha;
     }
 
-    public void setFechaEntrada(Date fechaEntrada) {
-        this.fechaEntrada = fechaEntrada;
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
     }
 
-    public Date getFechaSalida() {
-        return fechaSalida;
+    public String getTipoMovimiento() {
+        return tipoMovimiento;
     }
 
-    public void setFechaSalida(Date fechaSalida) {
-        this.fechaSalida = fechaSalida;
+    public void setTipoMovimiento(String tipoMovimiento) {
+        this.tipoMovimiento = tipoMovimiento;
     }
 
     public Usuarios getUsuarios() {
@@ -69,6 +69,6 @@ public class Historicos {
     public void setProducto(Productos producto) {
         this.producto = producto;
     }
-    
+
     
 }

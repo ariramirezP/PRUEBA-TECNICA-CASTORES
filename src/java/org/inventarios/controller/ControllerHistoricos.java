@@ -30,21 +30,8 @@ public class ControllerHistoricos {
     usuarios.setNombre(rs.getString("nombre"));
     usuarios.setIdUsuario(rs.getInt("idUsuario"));
     historicos.setUsuarios(usuarios);
-    historicos.setFechaEntrada(rs.getTimestamp("fechaEntrada"));
-    
-    return historicos;
-}
-
-        public Historicos fillSalidas(ResultSet rs) throws SQLException{
-    Historicos historicos = new Historicos();
-    Usuarios usuarios = new Usuarios();
-    Productos producto = new Productos();
-    
-    historicos.setIdHistorico(rs.getInt("idHistorico"));
-    usuarios.setNombre(rs.getString("nombre"));
-    usuarios.setIdUsuario(rs.getInt("idUsuario"));
-    historicos.setUsuarios(usuarios);
-    historicos.setFechaEntrada(rs.getTimestamp("fechaSalida"));
+    historicos.setFecha(rs.getTimestamp("fecha"));
+    historicos.setTipoMovimiento(rs.getString("tipoMovimiento"));
     
     return historicos;
 }
